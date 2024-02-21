@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>FACE WEB LOGIN</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <video id="video" width="440" height="280" autoplay></video>
+        <br>
+
+        <!-- BUTTONCAPTURE PHOTO-->
+        <button onclick="capture()">YOU CAPTURE PHOTO FACE</button>
+        <br>
+        <!-- AND YOU FACE CAM -->
+        <canvas id="canvas" width="400" height="280" style="display: none;"></canvas>
+        <br>
+        <h3>REGISTER ACCOUNT</h3>
+        <label for="name">You name:</label>
+        <input type="text" id="name" required name="">
+        <br>
+        <button onclick="register()">REGISTER</button>
+        <button onclick="login()">Login Now</button>
+
+        <!-- AND ADD STATIC FOLDER-->
+        <script src="{{url_for('static',filename='js/script.js')}}" async defer></script>
+    </body>
+</html>
